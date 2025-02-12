@@ -47,4 +47,8 @@ class ShopListController extends Controller
         $shopList = ShopList::findOrFail($id);
         $shopList->delete();
     }
+
+    public function destroyAll(){
+        ShopList::truncate();
+    }
 }
