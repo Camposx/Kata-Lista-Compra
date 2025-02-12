@@ -9,15 +9,16 @@ return new class extends Migration
 
     public function up(): void
     {
-        Schema::create('shoplist', function(Blueprint $table) {
+        Schema::create('shop_lists', function(Blueprint $table) {
             $table->id();
             $table->text('product');
             $table->integer('quantity');
+            $table->timestamps();
         }); 
     }
 
     public function down(): void
     {
-        Schema::dropIfExists('shoplist');
+        Schema::dropIfExists('shop_list');
     }
 };
