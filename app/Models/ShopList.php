@@ -1,0 +1,13 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class ShopList extends Model
+{
+    protected $fillable = [
+        'product',
+        'quantity'
+    ];
+}
